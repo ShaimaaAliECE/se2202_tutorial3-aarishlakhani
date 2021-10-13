@@ -8,7 +8,7 @@ let powerOf = function (power) {
  {
      return Math.pow(value,power)
  }  
-
+return powerInner;
 };
 
 let powerOfTwo= powerOf(2); // set this variable to a closure that would raise any value to two.
