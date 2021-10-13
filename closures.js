@@ -4,11 +4,16 @@ let powerOf = function (power) {
         and return the result of raising it to the power set through the outer function
 
     */
+   let powerInner = function(value)
+ {
+     return Math.pow(value,power)
+ }  
+
 };
 
-let powerOfTwo; // set this variable to a closure that would raise any value to two.
+let powerOfTwo= powerOf(2); // set this variable to a closure that would raise any value to two.
 
-let powerOfTen; // set this variable to a closure that would raise any value to ten.
+let powerOfTen= powerOf(10); // set this variable to a closure that would raise any value to ten.
 
 
 // DO NOT change the lines below

@@ -18,6 +18,17 @@ let getDictionary = function (lang)
     */
     let englishDictionary = function (number)
     {
+        switch(number){
+            case 1: 
+            return "one"
+            break;
+            case 2: 
+            return "two"
+            break;
+            case 3: 
+            return "three"
+            break;
+        }
         /*
             Use the switch-case statement to return the name that corresponds to the number in English
             ( 1, 2, 3 are enough)
@@ -31,8 +42,20 @@ let getDictionary = function (lang)
     /*
         Complete the definiton of the englishDictionary function
     */
-    let frenchDictionary = function (number)
+    let frenchDictionary = function (num)
     {
+        switch(num){
+            case 1: 
+            return "un"
+            break;
+            case 2: 
+            return "deux"
+            break;
+            case 3: 
+            return "trois"
+            break;
+        }
+           
         /*
             Use the switch-case statement to return the name that corresonds to the number in French
             ( 1, 2, 3 are enough)
@@ -46,13 +69,22 @@ let getDictionary = function (lang)
     /*
         Write an if-statement that would return either the engishDictionary or the frenchDictionary 
         based on the value of the argument 'lang'
-    */
-}
+  
+        */
+       if(lang=='E')
+       {
+           return englishDictionary
+        }
+        if(lang=='F'){
+            return frenchDictionary
+        }
+
+    }
 
 
 // Call the getDictionay function in a way that allows us to use the binding names below as the corresponding dictionary function
-let english; 
-let french;
+let english=getDictionary('E'); 
+let french=getDictionary('F');
 
 
 // DO NOT change the lines below
